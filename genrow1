@@ -1,0 +1,5 @@
+for i in {1..20} ; do
+	cat data /"$1-$i" .dat | make run 2 > /dev/null | tr '|', ','
+done 
+echo
+
